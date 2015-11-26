@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Chatbot</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,   initial-scale=1.0 user-scalable=no">
+<style type="text/css">
+{ 
+	font-family: 'Lato', sans-serif;
+	
+	}
+textarea {
+   resize: none;
+   overflow: auto;
+}
+body {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#99cfff+0,7db9e8+100&amp;1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(153,207,255,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(153,207,255,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(153,207,255,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cfff', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+background-repeat: repeat-x;
+}
+
+#sisu {
+				width: 940px;
+				margin: auto;
+				}
+
+textarea {  
+  border: 1px solid #2E9AFE; 
+}
+input {  
+  border: 1px solid #2E9AFE; 
+}
+
+/*media querys*/
+		@media all and (max-width: 980px) and (min-width: 480px){
+
+				#sisu {
+					width: 100%;
+					overflow: hidden;
+				}
+				#nupp {
+						visibility: hidden;	
+						float: left;
+						overflow: hidden;
+					}
+				#sisend {
+					float:left;
+					width: 720px;
+
+					overflow: hidden;
+				}
+			}
+
+/*mobiili vaade*/
+		@media all and (max-width: 479px) {
+				
+				#sisu {
+					width: 100%;
+					overflow: hidden;
+				}
+	
+				textarea {
+					
+					width: 300px;
+    				height: 200px;
+				}
+				#nupp {
+						visibility: hidden;	
+						float: left;
+						overflow: hidden;	
+				}
+				#sisend {
+					float:left;
+
+					width: 303px;
+					overflow: hidden;
+				}
+			}
+			
+			
+
+				
+		
+			
+
+
+
+</style>
+	</head>
+	
+	<body>
+
+	<div id="sisu">
+<img src="troll.png" id="troll" width="100" height="100"></img>
+
+<div id="vastused">
+<textarea id="vastus" cols="100" rows="20" readonly></textarea>
+</div>
+
+<form onsubmit="javascript:ytle();return false;" >
+<input type="text" id="sisend" size="93"  placeholder="Kirjuta siia"/>	
+
+<input  type="Button" id="nupp" value="Ütle" onclick="ytle()"/>
+</form>
+
+
+	
+	
+	
+		<script src="chatbot.js"></script>
+	
+	</div>
+	</body>
+</html>
